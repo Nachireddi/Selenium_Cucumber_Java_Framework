@@ -7,7 +7,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.cucumber.listener.Reporter;
-import com.cucumber.utility.Log;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -34,7 +33,7 @@ public class BookTicketRunner extends AbstractTestNGCucumberTests {
 		// "html:target/cucumber-reports/cucumber-pretty",
 		// "rerun:target/cucumber-reports/rerun.txt"
 
-		Log.startTestCase(testcasename);
+		//Log.startTestCase(testcasename);
 	}
 
 	@AfterClass(alwaysRun = true)
@@ -50,7 +49,7 @@ public class BookTicketRunner extends AbstractTestNGCucumberTests {
 		Reporter.setSystemInfo("os", "Window");
 		Reporter.setTestRunnerOutput("Sample test runner output message");
 
-		Log.endTestCase(testcasename);
+	//	Log.endTestCase(testcasename);
 		System.out.println("***************** " + testcasename + " Test end *****************");
 
 	}
